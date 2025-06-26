@@ -1,0 +1,23 @@
+[project]
+name = "bode"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+cache_dir = "/home/runner/workspace/bode/./.requirements"
+boot_contracts = ["pox", "costs-v2", "bns"]
+[contracts.enterprise-grade-content-management-and-digital-rights-protection]
+path = "contracts/enterprise-grade-content-management-and-digital-rights-protection.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
